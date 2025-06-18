@@ -1,0 +1,127 @@
+.nav a{
+    color: white;
+    text-decoration: none;
+	font-family: 'Chiro';
+    font-size: 30px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #DA70D6;
+	border-radius: 5px;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: white;
+    opacity: 80%;
+}
+
+.nav a.active{
+    background-color: white;
+    color: black;
+    opacity: 80%;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:  0;
+    opacity: 80%;
+}
+
+.izbornik:hover .elementi{
+    display: block;
+    background-color: white;
+    opacity: 100%;
+    color: white;
+}
+
+.izbornik:hover .naslov{
+    background-color: white;
+    opacity: 80%;
+    color: black;
+}
+
+.izbornik:hover .elementi a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+body{
+    background-image: url('slike/pozadina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('fonts/font.ttf');
+}
+@font-face {
+    font-family: 'Chiro';
+    src: url('fonts/Chiro.ttf');
+}
+
+h1 {
+    font-family: 'font';
+    color: #333;
+    font-size: 70px;
+	text-align: center;
+}
+
+h2 {
+    font-family: 'Chiro';
+    color: #333;
+    font-size: 60px;
+	text-align: center;
+}
+
+h3 {
+    font-family: 'Chiro';
+    color: #333;
+    font-size: 45px;
+}
+
+h4 {
+    font-family: 'Chiro';
+    color: #333;
+    font-size: 30px;
+}
+
+ol {
+    font-family: 'Chiro';
+    color: #333;
+    font-size: 35px;
+}
+
+@keyframes nešto {
+    0%   {background-color: #90EE90;}
+    25%  {background-color: #66CDAA;}
+    50%  {background-color: #DC143C;}
+    75%  {background-color: #FF7F50;}
+}
+
+.nav a{
+    animation-name: nešto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.galerija{
+    display: flex;
+    background-color: #FFB6C1;
+    padding: 18px 18px 18px 18px;
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 40px auto;
+}
